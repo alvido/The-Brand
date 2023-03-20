@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>The Brand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -10,60 +13,199 @@
         <div class="container">
             <div class="header_wraper">
                 <div class="header_item">
-                    <a href="index.html" class="header_link">
-                        <img src="assets/images/header/logo.png" alt="" class="header_logo">
+                    <a href="index.html" class="header_logo">
+                        <img src="assets/images/header/logo.png" alt="">
                     </a>
-                    <input type="search" id="mySearch" name="q" placeholder="search" required>
-                    <button><img src="assets/images/header/search.svg" alt="" class="header_btn"></button>
+                    <button class="header_btn" id="search_btn">
+                        <img src="assets/images/header/search.svg" alt="" >
+                    </button>
+                    <input type="search" id="search" name="q" placeholder="search" required>
                 </div>
                 <div class="header_item">
-                    <button><img src="assets/images/header/burger.svg" alt="" class="header_btn"></button>
-                    <button><img src="assets/images/header/acount.svg" alt="" class="header_btn"></button>
-                    <button><img src="assets/images/header/cart.svg" alt="" class="header_btn"></button>
-                    <nav class="header_nav">
-                        <span class="nav_title">menu</span>
-                        <ul class="nav_list">
-                            <li class="nav_item">
-                                man
-                                <ul>
-                                    <li>
-                                        <a href="" class="">Accessories</a>
-                                        <a href="" class="">Bags</a>
-                                        <a href="" class="">Denim</a>
-                                        <a href="" class="">T-Shirts</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav_item">
-                                woman
-                                <ul>
-                                    <li>
-                                        <a href="" class="">Accessories</a>
-                                        <a href="" class="">Jackets&amp;Coats</a>
-                                        <a href="" class="">Polos</a>
-                                        <a href="" class="">T-Shirts</a>
-                                        <a href="" class="">Shirts</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav_item">
-                                kids
-                                <ul>
-                                    <li>
-                                        <a href="" class="">Accessories</a>
-                                        <a href="" class="">Jackets&amp;Coats</a>
-                                        <a href="" class="">Polos</a>
-                                        <a href="" class="">T-Shirts</a>
-                                        <a href="" class="">Shirts</a>
-                                        <a href="" class="">Bags</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+                    <button class="header_btn" id="burder">
+                        <img src="assets/images/header/burger.svg" alt="">
+                    </button>
+                    <button class="header_btn" id="acount">
+                        <img src="assets/images/header/acount.svg" alt="">
+                    </button>
+                    <button class="header_btn">
+                        <img src="assets/images/header/cart.svg" alt="">
+                    </button>
                 </div>
             </div>
+            <nav class="header_nav">
+                    <span class="nav_title">menu</span>
+                    <span class="close">
+                        <img src="assets/images/icon/close.svg" alt="">
+                    </span>
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            man
+                            <ul class="nav_sublist">
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">Accessories</a>
+                                </li>
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">Bags</a>
+                                </li>
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">Denim</a>
+                                </li>
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">T-Shirts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_item">
+                            woman
+                            <ul class="nav_sublist">
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">Accessories</a>
+                                </li>
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">Jackets&amp;Coats</a>
+                                </li>
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">Polos</a>
+                                </li>
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">T-Shirts</a>
+                                </li>
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">Shirts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_item">
+                            kids
+                            <ul class="nav_sublist">
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">Accessories</a>
+                                </li>
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">Jackets&amp;Coats</a>
+                                </li>
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">Polos</a>
+                                </li>
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">T-Shirts</a>
+                                </li>
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">Shirts</a>
+                                </li>
+                                <li class="nav_subitem">
+                                    <a href="#" class="nav_sublink">Bags</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
         </div>
     </header>
+    <main class="main">
+        <section class="banner">
+            <div class="banner_wraper">
+                <img src="assets/images/baner.png" alt="" class="baner_img">
+                <div class="banner_content">
+                    <h1 class="banner_title">the brand</h1>
+                    <p class="banner_text">OF LUXERIOUS <span>FASHION</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="offer">
+            <div class="container">
+                <ul class="offer_list">
+                    <li class="offer_item">
+                        <img src="assets/images/intro/women.png" alt="" class="offer_img">
+                        <div class="offer_content">
+                            <span class="offer_text">30% OFF</span>
+                            <h2 class="offer_title">FOR WOMEN</h2>
+                        </div>
+                    </li>
+                    <li class="offer_item">
+                        <img src="assets/images/intro/men.png" alt="" class="offer_img">
+                        <div class="offer_content">
+                            <span class="offer_text">HOT DEAL</span>
+                            <h2 class="offer_title">FOR MEN</h2>
+                        </div>
+                    </li>
+                    <li class="offer_item">
+                        <img src="assets/images/intro/kids.png" alt="" class="offer_img">
+                        <div class="offer_content">
+                            <span class="offer_text">NEW ARRIVALS</span>
+                            <h2 class="offer_title">FOR kids</h2>
+                        </div>
+                    </li>
+                    <li class="offer_item">
+                        <img src="assets/images/intro/accesories.png" alt="" class="offer_img">
+                        <div class="offer_content">
+                            <span class="offer_text">LUXIROUS &amp; TRENDY</span>
+                            <h2 class="offer_title">ACCESORIESF</h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="product">
+            <div class="container">
+                <h3 class="product_title">Fetured Items</h3>
+                <p class="product_subtitle">Shop for items based on what we featured in this week</p>
+                <ul class="product_list">
+                    <li class="product_item">
+                        <img src="assets/images/fetured/first.png" alt="" class="product_img">
+                        <div class="product_content">
+                            <span class="product_name">ELLERY X M'O CAPSULE</span>
+                            <span class="product_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                            <span class="product_price">$52.00</span>
+                        </div>
+                    </li>
+                    <li class="product_item">
+                        <img src="assets/images/fetured/second.png" alt="" class="product_img">
+                        <div class="product_content">
+                            <span class="product_name">ELLERY X M'O CAPSULE</span>
+                            <span class="product_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                            <span class="product_price">$52.00</span>
+                        </div>
+                    </li>
+                    <li class="product_item">
+                        <img src="assets/images/fetured/third.png" alt="" class="product_img">
+                        <div class="product_content">
+                            <span class="product_name">ELLERY X M'O CAPSULE</span>
+                            <span class="product_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                            <span class="product_price">$52.00</span>
+                        </div>
+                    </li>
+                    <li class="product_item">
+                        <img src="assets/images/fetured/fourth.png" alt="" class="product_img">
+                        <div class="product_content">
+                            <span class="product_name">ELLERY X M'O CAPSULE</span>
+                            <span class="product_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                            <span class="product_price">$52.00</span>
+                        </div>
+                    </li>
+                    <li class="product_item">
+                        <img src="assets/images/fetured/fifth.png" alt="" class="product_img">
+                        <div class="product_content">
+                            <span class="product_name">ELLERY X M'O CAPSULE</span>
+                            <span class="product_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                            <span class="product_price">$52.00</span>
+                        </div>
+                    </li>
+                    <li class="product_item">
+                        <img src="assets/images/fetured/sixth.png" alt="" class="product_img">
+                        <div class="product_content">
+                            <span class="product_name">ELLERY X M'O CAPSULE</span>
+                            <span class="product_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                            <span class="product_price">$52.00</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
