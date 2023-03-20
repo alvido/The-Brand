@@ -1,0 +1,5 @@
+*, :before, :after{
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+}
