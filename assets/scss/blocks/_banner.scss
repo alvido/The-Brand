@@ -1,0 +1,30 @@
+/*banner*/
+.banner{
+    background: #F1E4E6;
+
+    &_wraper{
+        width: 1600px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    &_content{
+        margin-left: 60px;
+        padding-left: 16px;
+        border-left: 12px solid #F16D7F;
+    }
+    &_title{
+        @include font(48px, 58px, 900);
+        color: #222;
+        text-transform: uppercase;
+    }
+    &_text{
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 35px;
+    }
+    &_text span{
+        color: #F16D7F;
+    }
+}
+/*end banner*/
