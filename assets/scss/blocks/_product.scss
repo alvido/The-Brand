@@ -50,7 +50,7 @@
         transition: all 3s;
     }
     &_btn{
-        @include flex(flex, center, inherit);
+        display: none;
         @include font(14px, 17px);
         @include border;
         position: absolute;

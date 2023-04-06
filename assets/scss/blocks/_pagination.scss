@@ -28,7 +28,7 @@
     display: block;
     color: $gray;
     position: absolute;
-    left: -8px;
+    left: -10px;
     bottom: 0;
 }
 .pagination .pagination_wrap .pagination_list .pagination_item .pagination_link{
@@ -36,4 +36,7 @@
     width: 15px;
     display: flex;
     justify-content: center;
+}
+.pagination .pagination_wrap .pagination_list .pagination_item .pagination_link.active{
+    color: $dark-pink;
 }

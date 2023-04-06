@@ -1,0 +1,53 @@
+.filter{
+    padding-top: 40px;
+}
+.filter .filter_wrap{
+    max-width: 360px;
+    margin-right: 30px;
+    padding: 15px;
+}
+.filter .filter_wrap:last-child{
+    margin-right: 0px;
+}
+.filter .filter_wrap .filter_title{
+    @include font(14px, 17px, 600);
+}
+.filter .filter_wrap .filter_title.active{
+    color: $dark-pink;
+}
+.filter .filter_wrap .filter_title.active svg path{
+    fill: $dark-pink;
+}
+.filter .filter_wrap .filter_title svg{
+    margin-left: 10px;
+}
+.filter .filter_wrap .filter_list{
+    margin-top: 15px;
+}
+.filter .filter_wrap .filter_list .filter_item.active .filter_link{
+    color: $dark-pink;
+    border-left: 5px solid $dark-pink;
+}
+.filter .filter_wrap .filter_list .filter_item.active .filter_sublist{
+    height: auto;
+    padding: 25px 20px;
+}
+.filter .filter_wrap .filter_list .filter_item .filter_link{
+    display: block;
+    @include font(14px, 17px);
+    color: $dark-gray;
+    padding: 10px;
+    border-bottom: 1px solid $gray;
+    border-left: 5px solid $dark-gray;
+    text-transform: uppercase;
+}
+.filter .filter_wrap .filter_list .filter_item .filter_sublist{
+    height: 0;
+    overflow: hidden;
+}
+.filter .filter_wrap .filter_list .filter_item .filter_sublist .filter_subitem{
+    margin-bottom: 10px;
+}
+.filter .filter_wrap .filter_list .filter_item .filter_sublist .filter_subitem:last-child{
+    margin-bottom: 0px;
+}
