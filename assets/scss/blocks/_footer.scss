@@ -30,10 +30,14 @@
         align-items: center;
         width: 32px;
         height: 32px;
-        background: #FFFFFF;
+        background: $white;
+        transition: .3s;
     }
     .footer_social_link:hover{
-        background: #e0e0e0;
+        background: $dark-pink;
+    }
+    .footer_social_link:hover svg path{
+        fill: $white;
     }
 }
 

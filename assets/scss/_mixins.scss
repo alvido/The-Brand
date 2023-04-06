@@ -5,8 +5,13 @@
     font-style: $font-style;
 }
 
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin flex-center($flex: flex, $align: center){
+    display: $flex;
+    align-items: $align;
+}
+
+@mixin border($width: 1px, $style: solid, $color: $white) {
+    border-width: $width;
+    border-style: $style;
+    color: $color;
 }

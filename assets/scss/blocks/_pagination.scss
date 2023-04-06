@@ -1,0 +1,14 @@
+.pagination{
+    @include flex-center;
+    justify-content: center;
+}
+.pagination .pagination_list{
+    @include flex-center;
+}
+.pagination .pagination_list .pagination_item{
+    @include font(16px, 19px, 300);
+    padding: 0 10px;
+}
+.pagination .pagination_list .pagination_item .pagination_link{
+    color: $gray;
+}

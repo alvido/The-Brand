@@ -109,52 +109,30 @@
     </header>
     <main class="main">
         <section class="banner">
-            <div class="banner_wraper">
-                <img src="assets/images/banner.png" alt="" class="baner_img">
-                <div class="banner_content">
-                    <h1 class="banner_title">the brand</h1>
-                    <p class="banner_text">OF LUXERIOUS <span>FASHION</span></p>
+            <div class="container">
+                <div class="banner_small">
+                    <h1 class="small_title">NEW ARRIVALS </h1>
+                    <nav class="crumbs">
+                        <ul class="crumbs_list">
+                            <li class="crumbs_item">
+                                <a href="#" class="crumbs_link">HOME</a>
+                            </li>
+                            <li class="crumbs_item">
+                                <a href="#" class="crumbs_link">men</a>
+                            </li>
+                            <li class="crumbs_item active">
+                                <a href="#" class="crumbs_link">NEW ARRIVALS</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </section>
-        <section class="offer">
+        <section class="catalog">
             <div class="container">
-                <ul class="offer_list">
-                    <li class="offer_item">
-                        <img src="assets/images/intro/women.png" alt="" class="offer_img">
-                        <div class="offer_content">
-                            <span class="offer_text">30% OFF</span>
-                            <h2 class="offer_title">FOR WOMEN</h2>
-                        </div>
-                    </li>
-                    <li class="offer_item">
-                        <img src="assets/images/intro/men.png" alt="" class="offer_img">
-                        <div class="offer_content">
-                            <span class="offer_text">HOT DEAL</span>
-                            <h2 class="offer_title">FOR MEN</h2>
-                        </div>
-                    </li>
-                    <li class="offer_item">
-                        <img src="assets/images/intro/kids.png" alt="" class="offer_img">
-                        <div class="offer_content">
-                            <span class="offer_text">NEW ARRIVALS</span>
-                            <h2 class="offer_title">FOR kids</h2>
-                        </div>
-                    </li>
-                    <li class="offer_item">
-                        <img src="assets/images/intro/accesories.png" alt="" class="offer_img">
-                        <div class="offer_content">
-                            <span class="offer_text">LUXIROUS &amp; TRENDY</span>
-                            <h2 class="offer_title">ACCESORIESF</h2>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="product">
-            <div class="container">
-                <h3 class="product_title">Fetured Items</h3>
-                <p class="product_subtitle">Shop for items based on what we featured in this week</p>
+                <div class="product_filter">
+
+                </div>
                 <ul class="product_list">
                     <li class="product_item">
                         <div class="product_overlay">
@@ -253,7 +231,26 @@
                         </div>
                     </li>
                 </ul>
-                <button class="main_btn">Browse All Product</button>
+                <div class="pagination">
+                    <button class="pagination_btn prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                            <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black"/>
+                        </svg>
+                    </button>
+                    <ul class="pagination_list">
+                        <li class="pagination_item"><a href="#" class="pagination_link">1</a></li>
+                        <li class="pagination_item"><a href="#" class="pagination_link">2</a></li>
+                        <li class="pagination_item"><a href="#" class="pagination_link">3</a></li>
+                        <li class="pagination_item"><a href="#" class="pagination_link">4</a></li>
+                        <li class="pagination_item"><a href="#" class="pagination_link">5</a></li>
+                        <li class="pagination_item"><a href="#" class="pagination_link">6</a></li>
+                    </ul>
+                    <button class="pagination_btn next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                            <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
         <section class="info">
@@ -333,8 +330,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
 </body>
 </html>
+

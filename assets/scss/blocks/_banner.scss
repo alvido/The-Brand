@@ -27,4 +27,46 @@
         color: #F16D7F;
     }
 }
+
+.banner_small{
+    @include flex-center;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+.banner_small .small_title{
+    @include font(24px, 29px);
+    color: $dark-pink;
+}
+.banner_small .crumbs .crumbs_list{
+    @include flex-center;
+}
+.banner_small .crumbs .crumbs_list .crumbs_item{
+    @include font(14px, 17px);
+    position: relative;
+    padding: 0 10px;
+}
+.banner_small .crumbs .crumbs_list .crumbs_item:first-child{
+    padding-left: 0;
+}
+.banner_small .crumbs .crumbs_list .crumbs_item:last-child{
+    padding-right: 0x;
+}
+.banner_small .crumbs .crumbs_list .crumbs_item.active .crumbs_link{ 
+    color: $dark-pink;
+    font-weight: bold;
+}
+.banner_small .crumbs .crumbs_list .crumbs_item::after{
+    content: '/';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -2px;
+}
+.banner_small .crumbs .crumbs_list .crumbs_item:last-child:after{
+    display: none;
+}
+.banner_small .crumbs .crumbs_list .crumbs_item .crumbs_link{
+    color: $dark-gray;
+    text-transform: uppercase;
+}
 /*end banner*/

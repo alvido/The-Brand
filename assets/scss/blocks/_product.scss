@@ -26,6 +26,49 @@
         flex-direction: column;
         max-width: 360px;
         margin-top: 30px;
+        transition: .3s;
+    }
+    &_item:hover &_overlay::before{
+        display: block;
+    }
+    &_item:hover &_btn{
+        @include flex-center(flex, center);
+    }
+    &_overlay{
+        position: relative;
+        transition: .3s;
+    }
+    &_overlay::before{
+        display: none;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(58, 56, 56, 0.86);
+        transition: all 3s;
+    }
+    &_btn{
+        @include flex-center(none, center);
+        @include font(14px, 17px);
+        @include border;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $transparent;
+        cursor: pointer;
+        padding: 10px 15px;
+        color: $white;
+        transition: .3s;
+    }
+    &_btn:hover{
+        transform: translate(-50%, -50%) scale(1.1);
+        
+    }
+    &_btn svg{
+        margin-right: 10px;
     }
     &_content{
         padding: 25px 16px;
