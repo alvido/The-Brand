@@ -1,14 +1,39 @@
 .pagination{
-    @include flex-center;
-    justify-content: center;
+    @include flex;
 }
-.pagination .pagination_list{
-    @include flex-center;
+.pagination .pagination_wrap{
+    @include flex(flex, center, inherit);
+    @include border(1px, solid, $gray);
+    border-radius: 4px;
+    padding: 15px;
 }
-.pagination .pagination_list .pagination_item{
+.pagination .pagination_wrap .pagination_btn{
+    @include flex;
+    background: $transparent;
+    width: 15px;
+}
+.pagination .pagination_wrap .pagination_btn.next{
+    transform: rotate(180deg);
+}
+.pagination .pagination_wrap .pagination_list{
+    @include flex;
+}
+.pagination .pagination_wrap .pagination_list .pagination_item{
     @include font(16px, 19px, 300);
-    padding: 0 10px;
+    padding: 0  10px;
+    position: relative;
 }
-.pagination .pagination_list .pagination_item .pagination_link{
+.pagination .pagination_wrap .pagination_list .pagination_item:last-child:before{
+    content: '.....';
+    display: block;
     color: $gray;
+    position: absolute;
+    left: -8px;
+    bottom: 0;
+}
+.pagination .pagination_wrap .pagination_list .pagination_item .pagination_link{
+    color: $gray;
+    width: 15px;
+    display: flex;
+    justify-content: center;
 }

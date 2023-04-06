@@ -296,6 +296,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
 }
 
 .banner_small .crumbs .crumbs_list .crumbs_item {
@@ -449,6 +452,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
 }
 .product_overlay {
   position: relative;
@@ -468,10 +474,15 @@ body {
   transition: all 3s;
 }
 .product_btn {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
@@ -741,23 +752,83 @@ body {
           justify-content: center;
 }
 
-.pagination .pagination_list {
+.pagination .pagination_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  border-width: 1px;
+  border-style: solid;
+  color: #c4c4c4;
+  border-radius: 4px;
+  padding: 15px;
 }
 
-.pagination .pagination_list .pagination_item {
+.pagination .pagination_wrap .pagination_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+  width: 15px;
+}
+
+.pagination .pagination_wrap .pagination_btn.next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.pagination .pagination_wrap .pagination_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination .pagination_wrap .pagination_list .pagination_item {
   font-size: 16px;
   line-height: 19px;
   font-weight: 300;
   font-style: normal;
   padding: 0 10px;
+  position: relative;
 }
 
-.pagination .pagination_list .pagination_item .pagination_link {
+.pagination .pagination_wrap .pagination_list .pagination_item:last-child:before {
+  content: ".....";
+  display: block;
   color: #c4c4c4;
+  position: absolute;
+  left: -8px;
+  bottom: 0;
+}
+
+.pagination .pagination_wrap .pagination_list .pagination_item .pagination_link {
+  color: #c4c4c4;
+  width: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.catalog {
+  padding-bottom: 100px;
 }/*# sourceMappingURL=style.css.map */

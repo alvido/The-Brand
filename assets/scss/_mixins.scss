@@ -5,9 +5,10 @@
     font-style: $font-style;
 }
 
-@mixin flex-center($flex: flex, $align: center){
+@mixin flex($flex: flex, $align: center, $content: center){
     display: $flex;
     align-items: $align;
+    justify-content: $content;
 }
 
 @mixin border($width: 1px, $style: solid, $color: $white) {

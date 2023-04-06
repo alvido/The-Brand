@@ -29,8 +29,7 @@
 }
 
 .banner_small{
-    @include flex-center;
-    justify-content: space-between;
+    @include flex(flex, center, space-between);
     padding: 60px 0;
 }
 .banner_small .small_title{
@@ -38,7 +37,7 @@
     color: $dark-pink;
 }
 .banner_small .crumbs .crumbs_list{
-    @include flex-center;
+    @include flex(flex, center, inherit);
 }
 .banner_small .crumbs .crumbs_list .crumbs_item{
     @include font(14px, 17px);

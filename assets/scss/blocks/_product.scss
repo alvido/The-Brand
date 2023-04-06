@@ -32,7 +32,7 @@
         display: block;
     }
     &_item:hover &_btn{
-        @include flex-center(flex, center);
+        @include flex(flex, center, inherit);
     }
     &_overlay{
         position: relative;
@@ -50,7 +50,7 @@
         transition: all 3s;
     }
     &_btn{
-        @include flex-center(none, center);
+        @include flex(flex, center, inherit);
         @include font(14px, 17px);
         @include border;
         position: absolute;
