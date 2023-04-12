@@ -1,5 +1,5 @@
 .filter{
-    padding-top: 40px;
+    padding-top: 0px;
 }
 .filter .filter_wrap{
     max-width: 360px;
@@ -24,15 +24,10 @@
 .filter .filter_wrap .filter_list{
     margin-top: 15px;
 }
-.filter .filter_wrap .filter_list .filter_item.active .filter_link{
-    color: $dark-pink;
-    border-left: 5px solid $dark-pink;
+.filter .filter_wrap .filter_list .filter_item{
+    transition: .3s;
 }
-.filter .filter_wrap .filter_list .filter_item.active .filter_sublist{
-    height: auto;
-    padding: 25px 20px;
-}
-.filter .filter_wrap .filter_list .filter_item .filter_link{
+.filter .filter_wrap .filter_list .filter_item .filter_text{
     display: block;
     @include font(14px, 17px);
     color: $dark-gray;
@@ -40,10 +35,22 @@
     border-bottom: 1px solid $gray;
     border-left: 5px solid $dark-gray;
     text-transform: uppercase;
+    cursor: pointer;
+}
+.filter .filter_wrap .filter_list .filter_item.active .filter_text{
+    color: $dark-pink;
+    border-left: 5px solid $dark-pink;
+}
+.filter .filter_wrap .filter_list .filter_item.active .filter_sublist{
+    height: auto;
+    padding: 0px 20px;
+
 }
 .filter .filter_wrap .filter_list .filter_item .filter_sublist{
     height: 0;
     overflow: hidden;
+    transition: .3s;
+    padding: 25px 0px;
 }
 .filter .filter_wrap .filter_list .filter_item .filter_sublist .filter_subitem{
     margin-bottom: 10px;

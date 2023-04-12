@@ -2,6 +2,10 @@
 .product{
     padding: 95px 0;
 
+    &_wrap{
+        display: flex;
+        flex-direction: column;
+    }
     &_title{
         font-weight: 400;
         font-size: 30px;
@@ -96,9 +100,11 @@
 }
 
 .main_btn{
-    display: block;
-    width: 211px;
-    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 45px;
     margin: 0 auto;
     font-weight: 400;
     font-size: 16px;

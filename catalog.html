@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Brand</title>
+    <title>Catalog</title>
+    <link rel="icon" type="image/png" href="/assets/images/header/logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -18,13 +19,13 @@
                     <a href="index.html" class="header_logo">
                         <img src="assets/images/header/logo.png" alt="">
                     </a>
-                    <button class="header_btn" id="search_btn">
+                    <button class="header_btn search_btn">
                         <img src="assets/images/header/search.svg" alt="" >
                     </button>
                     <input type="search" id="search" name="q" placeholder="search" required>
                 </div>
                 <div class="header_item">
-                    <button class="header_btn" id="burder">
+                    <button class="header_btn burder">
                         <img src="assets/images/header/burger.svg" alt="">
                     </button>
                     <button class="header_btn" id="acount">
@@ -128,74 +129,68 @@
                 </div>
             </div>
         </section>
+        <section class="filter container">
+            <div class="filter_wrap">
+                <span class="filter_title active">
+                    FILTER
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10" fill="none">
+                        <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" fill="black"/>
+                    </svg>
+                </span>
+                <ul class="filter_list">
+                    <li class="filter_item active">
+                        <span class="filter_text">Category</span>
+                        <ul class="filter_sublist active">
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Accessories</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Bags</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Denim</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Hoodies & Sweatshirts</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Jackets & Coats</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Polos</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Shirts</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Shoes</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Sweaters & Knits</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">T-Shirts</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Tanks</a></li>
+                        </ul>
+                    </li>
+                    <li class="filter_item">
+                        <span class="filter_text">Brand</span>
+                        <ul class="filter_sublist">
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Accessories</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Bags</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Denim</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Hoodies & Sweatshirts</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Jackets & Coats</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Polos</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Shirts</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Shoes</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Sweaters & Knits</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">T-Shirts</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Tanks</a></li>
+                        </ul>
+                    </li>
+                    <li class="filter_item">
+                        <span class="filter_text">DESIGNER</span>
+                        <ul class="filter_sublist">
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Accessories</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Bags</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Denim</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Hoodies & Sweatshirts</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Jackets & Coats</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Polos</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Shirts</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Shoes</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Sweaters & Knits</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">T-Shirts</a></li>
+                            <li class="filter_subitem"><a href="#" class="filter_sublink">Tanks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <section class="catalog">
             <div class="container">
-                <div class="filter">
-                    <div class="filter_wrap">
-                        <span class="filter_title active">
-                            FILTER
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10" fill="none">
-                                <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" fill="black"/>
-                            </svg>
-                        </span>
-                        <ul class="filter_list">
-                            <li class="filter_item active">
-                                <a href="#" class="filter_link">
-                                    Category
-                                </a>
-                                <ul class="filter_sublist active">
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Accessories</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Bags</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Denim</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Hoodies & Sweatshirts</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Jackets & Coats</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Polos</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Shirts</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Shoes</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Sweaters & Knits</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">T-Shirts</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Tanks</a></li>
-                                </ul>
-                            </li>
-                            <li class="filter_item">
-                                <a href="#" class="filter_link">
-                                    Brand
-                                </a>
-                                <ul class="filter_sublist">
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Accessories</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Bags</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Denim</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Hoodies & Sweatshirts</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Jackets & Coats</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Polos</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Shirts</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Shoes</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Sweaters & Knits</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">T-Shirts</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Tanks</a></li>
-                                </ul>
-                            </li>
-                            <li class="filter_item">
-                                <a href="#" class="filter_link">
-                                    DESIGNER
-                                </a>
-                                <ul class="filter_sublist">
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Accessories</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Bags</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Denim</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Hoodies & Sweatshirts</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Jackets & Coats</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Polos</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Shirts</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Shoes</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Sweaters & Knits</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">T-Shirts</a></li>
-                                    <li class="filter_subitem"><a href="#" class="filter_sublink">Tanks</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
                 <ul class="product_list">
                     <li class="product_item">
                         <div class="product_overlay">
@@ -293,30 +288,30 @@
                             <span class="product_price">$52.00</span>
                         </div>
                     </li>
+                </ul> 
+            </div>
+        </section>
+        <section class="pagination">
+            <div class="pagination_wrap">
+                <button class="pagination_btn prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                        <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black"/>
+                    </svg>
+                </button>
+                <ul class="pagination_list">
+                    <li class="pagination_item"><a href="#" class="pagination_link active">1</a></li>
+                    <li class="pagination_item"><a href="#" class="pagination_link">2</a></li>
+                    <li class="pagination_item"><a href="#" class="pagination_link">3</a></li>
+                    <li class="pagination_item"><a href="#" class="pagination_link">4</a></li>
+                    <li class="pagination_item"><a href="#" class="pagination_link">5</a></li>
+                    <li class="pagination_item"><a href="#" class="pagination_link">6</a></li>
+                    <li class="pagination_item"><a href="#" class="pagination_link">20</a></li>
                 </ul>
-                <div class="pagination">
-                    <div class="pagination_wrap">
-                        <button class="pagination_btn prev">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
-                                <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black"/>
-                            </svg>
-                        </button>
-                        <ul class="pagination_list">
-                            <li class="pagination_item"><a href="#" class="pagination_link active">1</a></li>
-                            <li class="pagination_item"><a href="#" class="pagination_link">2</a></li>
-                            <li class="pagination_item"><a href="#" class="pagination_link">3</a></li>
-                            <li class="pagination_item"><a href="#" class="pagination_link">4</a></li>
-                            <li class="pagination_item"><a href="#" class="pagination_link">5</a></li>
-                            <li class="pagination_item"><a href="#" class="pagination_link">6</a></li>
-                            <li class="pagination_item"><a href="#" class="pagination_link">20</a></li>
-                        </ul>
-                        <button class="pagination_btn next">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
-                                <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+                <button class="pagination_btn next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                        <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black"/>
+                    </svg>
+                </button>
             </div>
         </section>
         <section class="info">
@@ -396,6 +391,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
 
