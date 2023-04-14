@@ -3,10 +3,18 @@
     background: #F1E4E6;
 
     &_wraper{
-        width: 1600px;
+        width: 85%;
         margin: 0 auto;
         display: flex;
         align-items: center;
+    }
+    .banner_img{
+        width: 50%;
+        height: auto;
+
+        @include tablet{
+            width: 386px;
+        }
     }
     &_content{
         margin-left: 60px;
@@ -69,3 +77,5 @@
     text-transform: uppercase;
 }
 /*end banner*/
+
+

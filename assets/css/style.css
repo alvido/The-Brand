@@ -73,7 +73,7 @@ body {
 
 .container {
   position: relative;
-  width: 1200px;
+  width: 65%;
   padding: 0 30px;
   margin: 0 auto;
 }
@@ -237,7 +237,7 @@ body {
   background: #F1E4E6;
 }
 .banner_wraper {
-  width: 1600px;
+  width: 85%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,6 +245,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.banner .banner_img {
+  width: 50%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .banner .banner_img {
+    width: 386px;
+  }
 }
 .banner_content {
   margin-left: 60px;
@@ -853,7 +862,6 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-
 .filter .filter_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -869,11 +877,9 @@ body {
   margin-right: 30px;
   position: relative;
 }
-
 .filter .filter_wrap:last-child {
   margin-right: 0px;
 }
-
 .filter .filter_wrap .filter_product {
   position: absolute;
   left: 0;
@@ -885,13 +891,11 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .filter .filter_wrap .filter_product.active {
   -webkit-box-shadow: 0px 0px 10px 10px #e0e0e0;
           box-shadow: 0px 0px 10px 10px #e0e0e0;
 }
-
-.filter .filter_wrap .filter_title {
+.filter .filter_title {
   font-size: 14px;
   line-height: 17px;
   font-weight: 600;
@@ -909,46 +913,39 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
-
-.filter .filter_wrap .filter_title.active {
+.filter .filter_title.active {
   color: #f16d7f;
 }
-
-.filter .filter_wrap .filter_title.active svg path {
+.filter .filter_title.active svg path {
   fill: #f16d7f;
 }
-
-.filter .filter_wrap .filter_title svg {
+.filter .filter_title svg {
   margin-left: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.filter .filter_wrap .filter_list {
+.filter_list {
   margin-top: 0px;
   overflow: hidden;
   height: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
-.filter .filter_wrap .filter_list.active {
+.filter_list.active {
   margin-top: 15px;
   overflow: hidden;
   height: auto;
 }
-
-.filter .filter_wrap .filter_list .filter_item {
+.filter_list .filter_item {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-bottom: 20px;
 }
-
-.filter .filter_wrap .filter_list .filter_item:last-child {
+.filter_list .filter_item:last-child {
   margin-bottom: 0px;
 }
-
-.filter .filter_wrap .filter_list .filter_item .filter_text {
+.filter_list .filter_item .filter_text {
   display: block;
   font-size: 14px;
   line-height: 17px;
@@ -961,42 +958,36 @@ body {
   text-transform: uppercase;
   cursor: pointer;
 }
-
-.filter .filter_wrap .filter_list .filter_item.active .filter_text {
+.filter_list .filter_item.active .filter_text {
   color: #f16d7f;
   border-left: 5px solid #f16d7f;
 }
-
-.filter .filter_wrap .filter_list .filter_item.active .filter_sublist {
+.filter_list .filter_item.active .filter_sublist {
   height: auto;
   margin-top: 20px;
 }
 
-.filter .filter_wrap .filter_list .filter_item .filter_sublist {
+.filter_sublist {
   height: 0;
   overflow: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   padding: 0px 20px;
 }
-
-.filter .filter_wrap .filter_list .filter_item .filter_sublist .filter_subitem {
+.filter_sublist .filter_subitem {
   margin-bottom: 10px;
 }
-
-.filter .filter_wrap .filter_list .filter_item .filter_sublist .filter_subitem:last-child {
+.filter_sublist .filter_subitem:last-child {
   margin-bottom: 0px;
 }
-
-.filter .filter_wrap .filter_list .filter_item .filter_sublist .filter_subitem .filter_sublink {
+.filter_sublist .filter_subitem .filter_sublink {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
   font-style: normal;
   color: #636363;
 }
-
-.filter .filter_wrap .filter_list .filter_item .filter_sublist .filter_subitem .filter_sublink:hover {
+.filter_sublist .filter_subitem .filter_sublink:hover {
   color: #f16d7f;
 }
 
@@ -1004,18 +995,15 @@ body {
   position: relative;
   padding: 0 30px 0 0;
 }
-
 .filter_checkbox:last-child {
   margin-right: 0px;
 }
-
 .filter_checkbox.active .filter_list {
   -webkit-box-shadow: 0px 0px 10px 5px #e0e0e0;
           box-shadow: 0px 0px 10px 5px #e0e0e0;
   padding: 10px;
 }
-
-.filter_checkbox .filter_list {
+.filter_checkbox .filter_checkbox .filter_list {
   position: absolute;
   top: 15px;
   left: 0;
@@ -1023,27 +1011,22 @@ body {
   z-index: 1;
   width: 100%;
 }
-
-.filter_checkbox .filter_list .filter_checkbox_item {
+.filter_checkbox .filter_checkbox .filter_list .filter_checkbox_item {
   position: relative;
 }
-
-.filter_checkbox .filter_list .filter_checkbox_item input {
+.filter_checkbox .filter_checkbox .filter_list .filter_checkbox_item input {
   display: none;
 }
-
-.filter_checkbox .filter_list .filter_checkbox_item input:checked ~ .checkmark {
+.filter_checkbox .filter_checkbox .filter_list .filter_checkbox_item input:checked ~ .checkmark {
   border-width: 1px;
   border-style: solid;
   color: #f16d7f;
   background: #f1e4e6;
 }
-
-.filter_checkbox .filter_list .filter_checkbox_item input:checked ~ .checkmark::after {
+.filter_checkbox .filter_checkbox .filter_list .filter_checkbox_item input:checked ~ .checkmark::after {
   display: block;
 }
-
-.filter_checkbox .filter_list .filter_checkbox_item label {
+.filter_checkbox .filter_checkbox .filter_list .filter_checkbox_item label {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1062,8 +1045,7 @@ body {
   text-transform: uppercase;
   padding-left: 20px;
 }
-
-.filter_checkbox .filter_list .filter_checkbox_item .checkmark {
+.filter_checkbox .filter_checkbox .filter_list .filter_checkbox_item .checkmark {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1079,8 +1061,7 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
-.filter_checkbox .filter_list .filter_checkbox_item .checkmark::after {
+.filter_checkbox .filter_checkbox .filter_list .filter_checkbox_item .checkmark::after {
   content: "";
   display: none;
   position: absolute;
