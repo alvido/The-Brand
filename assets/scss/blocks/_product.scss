@@ -53,6 +53,9 @@
         background: rgba(58, 56, 56, 0.86);
         transition: all 3s;
     }
+    &_img{
+        display: block;
+    }
     &_btn{
         display: none;
         @include font(14px, 17px);

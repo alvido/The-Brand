@@ -1,5 +1,6 @@
 .pagination{
     @include flex;
+    margin-bottom: 100px;
 }
 .pagination .pagination_wrap{
     @include flex(flex, center, inherit);
@@ -11,6 +12,7 @@
     @include flex;
     background: $transparent;
     width: 15px;
+    cursor: pointer;
 }
 .pagination .pagination_wrap .pagination_btn.next{
     transform: rotate(180deg);
