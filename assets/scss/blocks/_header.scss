@@ -3,6 +3,14 @@
     padding: 18px 0;
     background: $dark-blue;
 
+    @include laptop{
+        padding: 18px 16px;
+    }
+
+    @include mobile{
+        padding: 18px 0px;
+    }
+
     &_wraper {
         display: flex;
         justify-content: space-between;
@@ -16,6 +24,11 @@
     &_logo{
         display: flex;
         margin-right: 40px;
+        transition: .3s;
+    }
+
+    &_logo:hover{
+        transform: scale(1.1);
     }
 
     &_btn{

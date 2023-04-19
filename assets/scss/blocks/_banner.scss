@@ -7,29 +7,59 @@
         margin: 0 auto;
         display: flex;
         align-items: center;
+
+        @include laptop{
+            width: 100%;
+        }
+
+        @include mobile{
+            justify-content: center;
+            height: 360px;
+        }
     }
     .banner_img{
         width: 50%;
+        max-width: 800px;
         height: auto;
 
-        @include tablet{
-            width: 386px;
+        @include mobile{
+            display: none;
         }
     }
     &_content{
         margin-left: 60px;
         padding-left: 16px;
         border-left: 12px solid #F16D7F;
+
+        @include laptop{
+            margin: 0;
+        }
     }
     &_title{
         @include font(48px, 58px, 900);
         color: #222;
         text-transform: uppercase;
+
+        @include laptop{
+            @include font(44px, 52px, 900);
+        }
+
+        @include tablet{
+            @include font(38px, 45px, 900);
+        }
     }
     &_text{
         font-weight: 700;
-        font-size: 34px;
+        font-size: 32px;
         line-height: 35px;
+
+        @include tablet{
+            @include font(24px, 28px, 700);
+        }
+
+        @include laptop{
+            @include font(20px, 24px, 700);
+        }
     }
     &_text span{
         color: #F16D7F;
@@ -39,10 +69,20 @@
 .banner_small{
     @include flex(flex, center, space-between);
     padding: 60px 0;
+
+    @include mobile{
+        flex-direction: column;
+        padding: 30px 0;
+    }
 }
 .banner_small .small_title{
     @include font(24px, 29px);
     color: $dark-pink;
+}
+.banner_small .crumbs{
+    @include mobile{
+        margin-top: 30px;
+    }
 }
 .banner_small .crumbs .crumbs_list{
     @include flex(flex, center, inherit);

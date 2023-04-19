@@ -1,5 +1,5 @@
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -7,7 +7,12 @@ body{
 }
 .container{
     position: relative;
-    width: 65%;
+    width: 75%;
     padding: 0 30px;
     margin: 0 auto;
+
+    @include laptop{
+        width: 100%;
+        padding: 0 16px;
+    }
 }

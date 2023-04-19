@@ -26,12 +26,12 @@ $(document).mouseup(function (e){
 //
 
 // open and close filter
-$(".filter_title").click(function() {
-    $('.filter_title').not(this).removeClass('active');
+$(".filter_btn").click(function() {
+    $('.filter_btn').not(this).removeClass('active');
     $(this).toggleClass('active');
-    $('.filter_title').not(this).parent().removeClass('active');
+    $('.filter_btn').not(this).parent().removeClass('active');
     $(this).parent().toggleClass('active');
-    $('.filter_title').not(this).next().removeClass('active');
+    $('.filter_btn').not(this).next().removeClass('active');
     $(this).next().toggleClass('active');
 });
 //

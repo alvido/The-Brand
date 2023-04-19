@@ -2,6 +2,10 @@
 .product{
     padding: 95px 0;
 
+    @include laptop{
+        padding: 60px 0;
+    }
+
     &_wrap{
         display: flex;
         flex-direction: column;
@@ -24,13 +28,33 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @include tablet{
+            padding: 0px 0 40px;
+        }
+
+        @include mobile{
+            justify-content: center;
+            padding: 24px 0 40px;
+        }
     }
     &_item{
         display: flex;
         flex-direction: column;
+        width: 32%;
         max-width: 360px;
         margin-top: 30px;
         transition: .3s;
+        cursor: pointer;
+
+        @include tablet{
+            width: 49%;
+        }
+
+        @include mobile{
+            width: 100%;
+            margin-top: 16px;
+        }
     }
     &_item:hover &_overlay::before{
         display: block;
@@ -55,6 +79,7 @@
     }
     &_img{
         display: block;
+        width: 100%;
     }
     &_btn{
         display: none;

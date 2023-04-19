@@ -2,6 +2,14 @@
 .offer{
     margin-top: 65px;
 
+    @include laptop{
+        margin-top: 30px;
+    }
+
+    @include tablet{
+        margin-top: 20px;
+    }
+
     .offer_list{
         display: flex;
         justify-content: space-between;
@@ -10,10 +18,23 @@
     &_item{
         position: relative;
         margin-bottom: 30px;
+        width: 32%;
     
+        @include tablet{
+            margin-bottom: 20px;
+        }
+        
+        @include mobile{
+            width: 100%;
+        }
     }
     &_item:last-child{
         margin-bottom: 0px;
+        width: 100%;
+
+        @include mobile{
+            height: 110px;
+        }
     }
     &_item:after {
         content: '';
@@ -24,15 +45,25 @@
         left: 0;
         background: rgba(33, 22, 22, 0.7);
     }
+    &_img{
+        width: 100%;
+        height: auto;
+
+        @include mobile{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     &_content{
         position: absolute;
-        top: 105px;
+        top: 50%;
         left: 0px;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         z-index: 1;
+        transform: translateY(-50%);
     }
     &_text{
         font-weight: 400;

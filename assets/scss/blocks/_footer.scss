@@ -3,10 +3,22 @@
     padding: 24px 0;
     background: #222224;
 
+    @include laptop{
+        padding: 24px 16px;
+    }
+
+    @include mobile{
+        padding: 24px 0px;
+    }
+
     .footer_wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include mobile{
+            flex-direction: column-reverse;
+        }
     }
     .footer_copy{
         font-weight: 400;
@@ -17,6 +29,10 @@
     }
     .footer_social_list{
         display: flex;
+
+        @include mobile{
+            padding: 20px 0 44px;
+        }
     }
     .footer_social_item{
         margin-right: 8px;

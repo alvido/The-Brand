@@ -1,6 +1,10 @@
 .pagination{
     @include flex;
     margin-bottom: 100px;
+
+    @include mobile{
+        margin-bottom: 60px;
+    }
 }
 .pagination .pagination_wrap{
     @include flex(flex, center, inherit);
