@@ -126,28 +126,4 @@
         color: #F16D7F;
     }
 }
-
-.main_btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 210px;
-    height: 45px;
-    margin: 0 auto;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #F26376;
-    background: #fff;
-    border: 1px solid #FF6A6A;
-    cursor: pointer;
-    transition: .3s;
-
-    &:hover{
-        color: #fff;
-        background: #F26376;
-    }
-}
-
 /*end product*/

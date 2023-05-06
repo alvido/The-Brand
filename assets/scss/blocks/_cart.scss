@@ -1,0 +1,103 @@
+.cart {
+
+    padding: 100px 0 130px;
+
+    .cart_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cart_col {
+        width: 60%;
+
+        .cart_item {
+            display: flex;
+            width: 100%;
+            box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+            margin-bottom: 40px;
+            position: relative;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            .cart_content {
+                padding: 20px 30px;
+    
+                .cart_title {
+                    @include font(24px, 29px);
+                    color: $dark-blue;
+                    margin-bottom: 40px;
+                }
+                
+                .cart_close {
+                    position: absolute;
+                    top: 25px;
+                    right: 20px;
+                    cursor: pointer;
+                }
+            
+                .cart_text {
+                    @include font(22px, 26px);
+                    color: $dark-gray;
+                    margin-bottom: 5px;
+                }
+            
+                .cart_text span{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .button_wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+    
+    #cart_form{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        padding: 20px 0;
+
+        .cart_total {
+            margin-top: 60px;
+            padding: 40px;
+            background: $lite-gray;
+    
+            .form_subtitle{
+                text-align: end;
+                margin-bottom: 10px;
+                @include font (11px, 13px);
+                color: $dark-blue;
+            }
+    
+            .form_title{
+                text-align: end;
+            }
+    
+            span{
+                margin-left: 30px;
+            }
+    
+            .red_btn{
+                width: 100%;
+                margin-top: 40px;
+                position: relative;
+    
+                &::before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: -20px;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: $gray;
+                }
+            }
+        }
+    }
+}
