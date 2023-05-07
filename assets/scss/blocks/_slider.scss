@@ -1,4 +1,53 @@
-.slider{
+.slider-container {
     @include flex;
     background: #F7F7F7;
-}
+    position: relative;
+    overflow: hidden;
+
+    .slider-button {
+        @include flex;
+        width: 50px;
+        height: 50px;
+        background: $gray;
+        position: absolute;
+        top: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1;
+        transition: .3s;
+
+        &:hover path {
+            fill: $dark-pink;
+        }
+
+        svg {
+            fill: $dark-gray;
+            width: auto;
+            height: 20px;
+        }
+    
+        &.slider-button-prev {
+            left: 20px;
+            transform: translateY(-50%);
+        }
+        
+        &.slider-button-next {
+            right: 20px;
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+
+    .slider {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    
+        .slide {
+            width: 100%;
+            height: auto;
+            flex: 1 0 100%;
+            display: flex;
+            justify-content: center; /* Центрируем содержимое слайда по горизонтали */
+            align-items: center
+        } 
+    }
+}   

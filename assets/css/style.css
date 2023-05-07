@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -731,25 +732,19 @@ form .white_btn {
 }
 .product_list {
   padding: 18px 0 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 @media (max-width: 768px) {
   .product_list {
     padding: 0px 0 40px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 500px) {
   .product_list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
     padding: 24px 0 40px;
   }
 }
@@ -761,21 +756,13 @@ form .white_btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 32%;
-  max-width: 360px;
   margin-top: 30px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }
-@media (max-width: 768px) {
-  .product_item {
-    width: 49%;
-  }
-}
 @media (max-width: 500px) {
   .product_item {
-    width: 100%;
     margin-top: 16px;
   }
 }
@@ -1556,7 +1543,7 @@ form .white_btn {
   margin-bottom: 0px;
 }
 
-.slider {
+.slider-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1567,6 +1554,72 @@ form .white_btn {
       -ms-flex-pack: center;
           justify-content: center;
   background: #F7F7F7;
+  position: relative;
+  overflow: hidden;
+}
+.slider-container .slider-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #c4c4c4;
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.slider-container .slider-button:hover path {
+  fill: #f16d7f;
+}
+.slider-container .slider-button svg {
+  fill: #575757;
+  width: auto;
+  height: 20px;
+}
+.slider-container .slider-button.slider-button-prev {
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.slider-container .slider-button.slider-button-next {
+  right: 20px;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+.slider-container .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.slider-container .slider .slide {
+  width: 100%;
+  height: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* Центрируем содержимое слайда по горизонтали */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cart {
